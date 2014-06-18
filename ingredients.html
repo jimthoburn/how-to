@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Ingredients</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
+  <link href="shared.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<h1>Ingredients</h1>
+
+<h2>Headline</h2>
+<pre><code>&lt;h1&gt;The name of this page or section&lt;/h1&gt;</code></pre>
+
+<h2>Paragraph</h2>
+<pre><code>&lt;p&gt;A section of text that represents a connected thought&lt;/p&gt;</code></pre>
+
+<h2>Link</h2>
+<pre><code>&lt;a href=&quot;The URL&quot;&gt;The name of the link&lt;/a&gt;</code></pre>
+
+<h2>Image</h2>
+<pre><code>&lt;img src=&quot;The URL&quot; alt=&quot;A caption for the image&quot; /&gt;</code></pre>
+
+<h2>Color</h2>
+<pre><code>background: black;
+color: white;</code></pre>
+
+<h2>Typeface</h2>
+<pre><code>font-family: Helvetica, sans-serif;</code></pre>
+
+<h2>Layout</h2>
+<pre><code>max-width: 40em;
+margin-left: auto;
+margin-right: auto;</code></pre>
+
+<h2>Night Background</h2>
+<pre><code>background-image: url(moon.svg);
+background-position: top right;
+background-repeat: no-repeat;</code></pre>
+
+<h2>Day Background</h2>
+<pre><code>background-image: url(moon.day);
+background-position: top left;
+background-repeat: no-repeat;</code></pre>
+
+<h2>Animation</h2>
+<pre><code>http://www.justinaguilar.com/animations/
+http://www.sharpandnimble.com/design-lab/
+
+animation-name: tossing;
+animation-duration: 2.5s; 
+animation-iteration-count: infinite;
+
+@keyframes tossing {
+  0% {
+    transform: rotate(-4deg); 
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg); 
+  }           
+}</code></pre>
+
+<h2>Button Press</h2>
+<pre><code>element.addEventListener("click", function(e) {
+  element.className = "animate";
+}</code></pre>
+
+<h2>Time of Day</h2>
+<p><a href="http://stackoverflow.com/questions/2250036/how-to-determine-if-it-is-day-or-night-in-javascript-or-jquery">Stack Overflow</a></p>
+<pre><code>var hour = (new Date()).getHours();
+if (hour &gt; 8 &amp;&amp; hour &lt; 20) {
+  document.body.className = "day"
+} else {
+  document.body.className = "night"
+}</code></pre>
+
+<footer>
+  <h2>References</h2>
+  <ul>
+    <li><a href="http://www.learningwebdesign.com">Learning Web Design by Jennifer Robbins</a></li>
+    <li><a href="http://docs.webplatform.org/wiki/html/elements" title="Element Reference on Web Platform">Web Platform</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference" title="Element Reference on MDN">MDN</a></li>
+  </ul>
+</footer>
+
+<!--
+<p class="next"><a href="example.html">And now an example</a></p>
+-->
+
+</body>
+</html>

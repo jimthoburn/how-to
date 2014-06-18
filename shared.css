@@ -1,0 +1,50 @@
+
+body {
+  background: white;
+  font: 125%/normal "Crimson Text", Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 1.5em 1.5em 3em;
+  color: #4d4d4d;
+}
+a {
+  color: #889faf;
+}
+body {
+  max-width: 33em;
+  margin: 0 auto;
+}
+section {
+  margin-top: 4em;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+h1 {
+  font-size: 200%;
+}
+h2 {
+  font-size: 150%;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+}
+pre {
+  background: #dae1be;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  position: relative;
+  white-space: pre-wrap;
+  word-wrap: break-word; /* For Internet Explorer */
+}
+.note {
+  color: #cd7c69;
+}
+.next {
+  text-align: right;
+  margin-top: 3em;
+  border-top: 1px solid #ccc;
+  padding-top: 1.5em;
+}
+.next:after {
+  content: " →";
+}
+

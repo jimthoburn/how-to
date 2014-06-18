@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to</title>
+  <style type="text/css">
+    html, body, #outer-outer-container, #outer-container {
+      height: 100%;
+      min-height: 100%;
+    }
+    body {
+      font: 125%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: rgb(244, 245, 244);
+      color: rgb(0, 1, 0); /* @text-color */
+    }
+    header h1 {
+      margin-bottom: 0;
+    }
+    header h1 a,
+    header h1 a:visited {
+      color: inherit;
+    }
+    header h2 {
+      margin-top: 0;
+      font-style: normal;
+      color: #999;
+    }
+    a[href] {
+      color: rgb(110, 160, 26); /* @link-color */
+      text-decoration: none;
+    }
+    a[href]:hover,
+    a[href]:active,
+    a[href]:focus {
+      text-decoration: underline;
+    }
+    a[href]:visited {
+      color: #333;
+    }
+    ul, li {
+      margin-left: 0;
+      padding-left: 0;
+    }
+    h3 {
+      margin-bottom: 0;
+    }
+    ul {
+      margin-top: 0.5em;
+      padding-left: 0.5em;
+    }
+    #container {
+      margin: 50px auto;
+    }
+    #outer-outer-container {
+      margin: 0 auto;
+      display: table;
+      padding: 2em;
+    }
+    #outer-container {
+      display: table-cell;
+      vertical-align: middle;
+      margin: 0 auto;
+    }
+    #container > section > section {
+      float: left;
+      margin-right: 3em;
+    }
+    li {
+      color: #bbb;
+    }
+    .new a {
+      color: #a93c44;
+    }
+  </style>
+</head>
+<body>
+  <div id="outer-outer-container">
+    <div id="outer-container">
+      <div id="container">
+
+        <header>
+          <h1>How to</h1>
+        </header>
+
+        <section>
+          <section>
+            <ul>
+              <li><a href="recipe.html">Recipe</a></li>
+              <li><a href="ingredients.html">Ingredients</a></li>
+            </ul>
+          </section>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
