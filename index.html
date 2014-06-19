@@ -4,99 +4,145 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How to</title>
-  <style type="text/css">
-    html, body, #outer-outer-container, #outer-container {
-      height: 100%;
-      min-height: 100%;
-    }
-    body {
-      font: 125%/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-      margin: 0;
-      background: rgb(244, 245, 244);
-      color: rgb(0, 1, 0); /* @text-color */
-    }
-    header h1 {
-      margin-bottom: 0;
-    }
-    header h1 a,
-    header h1 a:visited {
-      color: inherit;
-    }
-    header h2 {
-      margin-top: 0;
-      font-style: normal;
-      color: #999;
-    }
-    a[href] {
-      color: rgb(110, 160, 26); /* @link-color */
-      text-decoration: none;
-    }
-    a[href]:hover,
-    a[href]:active,
-    a[href]:focus {
-      text-decoration: underline;
-    }
-    a[href]:visited {
-      color: #333;
-    }
-    ul, li {
-      margin-left: 0;
-      padding-left: 0;
-    }
-    h3 {
-      margin-bottom: 0;
-    }
-    ul {
-      margin-top: 0.5em;
-      padding-left: 0.5em;
-    }
-    #container {
-      margin: 50px auto;
-    }
-    #outer-outer-container {
-      margin: 0 auto;
-      display: table;
-      padding: 2em;
-    }
-    #outer-container {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 0 auto;
-    }
-    #container > section > section {
-      float: left;
-      margin-right: 3em;
-    }
-    li {
-      color: #bbb;
-    }
-    .new a {
-      color: #a93c44;
-    }
-  </style>
+  <title>How to make a page for the Web</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css" />
+  <link href="shared.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div id="outer-outer-container">
-    <div id="outer-container">
-      <div id="container">
 
-        <header>
-          <h1>How to</h1>
-        </header>
+<h1>How to make a page for the Web</h1>
 
-        <section>
-          <section>
-            <ul>
-              <li><a href="recipe.html">Recipe</a></li>
-              <li><a href="ingredients.html">Ingredients</a></li>
-              <li><a href="http://jimthoburn.github.io/north/">Example</a></li>
-            </ul>
-          </section>
-        </section>
+<h2>Ingredients</h2>
+<ul>
+  <li>HTML document</li>
+  <li>Colors</li>
+  <li>Typeface</li>
+  <li>Layout</li>
+  <li>Animation</li>
+  <!--
+  <li>Interaction</li>
+  -->
+</ul>
 
-      </div>
-    </div>
-  </div>
+<h2>Instructions</h2>
+<ol>
+  <li>Create a new HTML file.</li>
+  <li>Add text, images, and other content.</li>
+  <li>Mark up your content to show relationships.</li>
+  <li>Create a new style sheet file (be sure to give it a “.css” extension).</li>
+  <li>Add a link to your style sheet in your HTML file.</li>
+  <li>In your style sheet, change the colors, margins and typeface to your liking.</li>
+  <li>(Optional) Add animation to make the page more lively.</li>
+</ol>
+
+
+<h1>Ingredients</h1>
+
+<h2 id="document">HTML document</h2>
+<pre><code>&lt;!doctype html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;title&gt;&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p class="note">Copy and paste this into a new file. (Be sure to give it a “.html” extension.)</p>
+
+<h2>Headline</h2>
+<pre><code>&lt;h1&gt;The name of this page or section&lt;/h1&gt;</code></pre>
+
+<h2>Paragraph</h2>
+<pre><code>&lt;p&gt;A section of text that represents a connected thought&lt;/p&gt;</code></pre>
+
+<h2>Link</h2>
+<pre><code>&lt;a href=&quot;The URL&quot;&gt;The name of the link&lt;/a&gt;</code></pre>
+
+<h2>Image</h2>
+<pre><code>&lt;img src=&quot;The URL&quot; alt=&quot;A caption for the image&quot; /&gt;</code></pre>
+
+<h2>Style sheet</h2>
+<pre><code>&lt;link href="style.css" rel="stylesheet" /&gt;</code></pre>
+<p class="note">Place the style sheet link inside the “head” element of your document.</p>
+
+<h2>Color</h2>
+<pre><code>element {
+  background: black;
+  color: white;
+}</code></pre>
+<p class="note">Replace the word “element” with the name of the HTML element you want to target (for example “body” or “p”).</p>
+
+<h2>Typeface</h2>
+<pre><code>element {
+  font-family: Helvetica, sans-serif;
+}</code></pre>
+
+<h2>Layout</h2>
+<pre><code>element {
+  max-width: 40em;
+  margin-left: auto;
+  margin-right: auto;
+}</code></pre>
+
+<!--
+<h2>Night Background</h2>
+<pre><code>background-image: url(moon.svg);
+background-position: top right;
+background-repeat: no-repeat;</code></pre>
+
+<h2>Day Background</h2>
+<pre><code>background-image: url(moon.day);
+background-position: top left;
+background-repeat: no-repeat;</code></pre>
+-->
+
+<h2>Animation</h2>
+<p>By <a href="http://www.justinaguilar.com/animations/">Justin Aguilar</a></p>
+<pre><code>@keyframes tossing {
+  0% {
+    transform: rotate(-4deg); 
+  }
+  50% {
+    transform: rotate(4deg);
+  }
+  100% {
+    transform: rotate(-4deg); 
+  }           
+}</code></pre>
+<pre><code>element {
+  animation-name: tossing;
+  animation-duration: 2.5s; 
+  animation-iteration-count: infinite;
+}</code></pre>
+
+<!--
+<h2>Button Press</h2>
+<pre><code>element.addEventListener("click", function(e) {
+  element.className = "animate";
+}</code></pre>
+
+<h2>Time of Day</h2>
+<p><a href="http://stackoverflow.com/questions/2250036/how-to-determine-if-it-is-day-or-night-in-javascript-or-jquery">Stack Overflow</a></p>
+<pre><code>var hour = (new Date()).getHours();
+if (hour &gt; 8 &amp;&amp; hour &lt; 20) {
+  document.body.className = "day"
+} else {
+  document.body.className = "night"
+}</code></pre>
+-->
+
+<h1>Example project</h1>
+<p><a href="http://jimthoburn.github.io/north/">Cities of the North</a></p>
+
+<h1>Further Reading</h1>
+<ul>
+  <li><a href="http://www.learningwebdesign.com">Learning Web Design by Jennifer Robbins</a></li>
+  <li><a href="http://docs.webplatform.org/wiki/Main_Page">Web Platform</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web" title="Web Documentation by Mozilla">MDN</a></li>
+</ul>
+
 </body>
 </html>
