@@ -26,16 +26,22 @@
 </ul>
 
 <h2>Instructions</h2>
+<h3>Add content</h3>
 <ol>
-  <li>Create a new HTML file.</li>
-  <li>Add text, images, and other content.</li>
-  <li>Mark up your content to show relationships.</li>
-  <li>Create a new style sheet file (be sure to give it a “.css” extension).</li>
-  <li>Add a link to your style sheet in your HTML file.</li>
-  <li>In your style sheet, change the colors, margins and typeface to your liking.</li>
-  <li>(Optional) Add animation to make the page more lively.</li>
+  <li>Create an <a href="document">HTML document.</a>.</li>
+  <li>Add your text, images and URLs and plain text.</li>
+  <li>Mark up your content to make it readable and interactive.</li>
+  <li>Open your document in a Web browser, to see how it’s looking.</li>
 </ol>
-
+<h3>Style your content</h3>
+<ol>
+  <li>Create an empty file with a “.css” extension. This will be your style sheet.</li>
+  <li>Add a <a href="#stylesheet">link</a> to the style sheet in your HTML document.</li>
+  <li>Open the style sheet and change the <a href="#color">colors</a>, margins and typeface to your liking.</li>
+  <li>(Optional) Add <a href="#animation">animation</a> to make the page more lively.</li>
+</ol>
+<h3>Publish your page</h3>
+<p>Put your page on <a href="http://dannguyen.github.io/github-for-portfolios/">GitHub</a> for the world to see!</p>
 
 <h1>Ingredients</h1>
 
@@ -64,16 +70,16 @@
 <h2>Image</h2>
 <pre><code>&lt;img src=&quot;The URL&quot; alt=&quot;A caption for the image&quot; /&gt;</code></pre>
 
-<h2>Style sheet</h2>
+<h2 id="stylesheet">Style</h2>
 <pre><code>&lt;link href="style.css" rel="stylesheet" /&gt;</code></pre>
-<p class="note">Place the style sheet link inside the “head” element of your document.</p>
+<p class="note">Place this in the <code>“head”</code> element of your HTML document.</p>
 
-<h2>Color</h2>
+<h2 id="color">Color</h2>
 <pre><code>element {
   background: black;
   color: white;
 }</code></pre>
-<p class="note">Replace the word “element” with the name of the HTML element you want to target (for example “body” or “p”).</p>
+<p class="note">Replace the word <code>“element”</code> with the name of the HTML element you want to target (for example <code>“body”</code> or <code>“p”</code>).</p>
 
 <h2>Typeface</h2>
 <pre><code>element {
@@ -99,7 +105,7 @@ background-position: top left;
 background-repeat: no-repeat;</code></pre>
 -->
 
-<h2>Animation</h2>
+<h2 id="animation">Animation</h2>
 <p>By <a href="http://www.justinaguilar.com/animations/">Justin Aguilar</a></p>
 <pre><code>@keyframes tossing {
   0% {
@@ -142,6 +148,7 @@ if (hour &gt; 8 &amp;&amp; hour &lt; 20) {
   <li><a href="http://www.learningwebdesign.com">Learning Web Design by Jennifer Robbins</a></li>
   <li><a href="http://docs.webplatform.org/wiki/Main_Page">Web Platform</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web" title="Web Documentation by Mozilla">MDN</a></li>
+  <li><a href="https://pages.github.com">GitHub Pages</a></li>
 </ul>
 
 </body>
