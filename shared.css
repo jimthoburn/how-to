@@ -9,6 +9,16 @@ body {
 a {
   color: #889faf;
 }
+figure {
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
+  padding-right: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
 body {
   max-width: 33em;
   margin: 0 auto;

@@ -14,11 +14,11 @@
 
 <h2>Ingredients</h2>
 <ul>
-  <li>HTML document</li>
-  <li>Colors</li>
-  <li>Typeface</li>
-  <li>Layout</li>
-  <li>Animation</li>
+  <li><a href="#document">HTML document</a></li>
+  <li><a href="#color">Colors</a></li>
+  <li><a href="#typeface">Typeface</a></li>
+  <li><a href="#layout">Layout</a></li>
+  <li><a href="#animation">Animation</a></li>
   <!--
   <li>Interaction</li>
   -->
@@ -40,7 +40,40 @@
   <li>(Optional) Add <a href="#animation">animation</a> to make the page more lively.</li>
 </ol>
 <h3>Publish your page</h3>
-<p>Put your page on <a href="https://24ways.org/2013/get-started-with-github-pages/">GitHub</a> for the world to see!</p>
+<p><a href="https://pages.github.com">GitHub Pages</a> is a place where publish your web page for free.</p>
+<ol>
+  <li>Create a free account on <a href="https://github.com">GitHub</a>.</li>
+  <li>
+    <a href="https://github.com/new">Create a new repository</a>.<br />
+    <em>Be sure to check the “Initialize this repository with a README” checkbox.</em>
+    <figure><img src="screenshots/initialize-repository.png" alt="Initialize this repository with a README" /></figure>
+  </li>
+  <li>
+    Press the “Upload files” tab within your new repository.
+    <figure><img src="screenshots/upload.png" alt="Upload files" /></figure>
+  </li>
+  <li>
+    Upload your “index.html” file and any other files you created during this tutorial (for example, images and style.css).
+    <figure><img src="screenshots/files.png" alt="Upload files" /></figure>
+  </li>
+  <li>
+    Scroll to the bottom of the page, write a commit message, and commit the new files.
+    <figure><img src="screenshots/commit.png" alt="Commit files" /></figure>
+  </li>
+  <li>
+    Press the “Settings” tab within your new repository.
+    <figure><img src="screenshots/settings.png" alt="Repository settings" /></figure>
+  </li>
+  <li>
+    Scroll down to the GitHub Pages section. Then select the master branch source and press the Save button.
+    <figure><img src="screenshots/choose-branch.png" alt="Choose the master branch" /></figure>
+  </li>
+  <li>
+    Scroll down to the GitHub Pages section one more time, and press the link to your published project. The link should look a bit like this: http://username.github.io/repository
+    <figure><img src="screenshots/published.png" alt="Published Link" /></figure>
+  </li>
+</ol>
+<p>And you’re done!</p>
 
 <h1>Ingredients</h1>
 
@@ -80,12 +113,12 @@
 }</code></pre>
 <p class="note">Replace the word <code>“element”</code> with the name of the HTML element you want to target (for example <code>“body”</code> or <code>“p”</code>).</p>
 
-<h2>Typeface</h2>
+<h2 id="typeface">Typeface</h2>
 <pre><code>element {
   font-family: Helvetica, sans-serif;
 }</code></pre>
 
-<h2>Layout</h2>
+<h2 id="layout">Layout</h2>
 <pre><code>element {
   max-width: 40em;
   margin-left: auto;
@@ -146,8 +179,7 @@ if (hour &gt; 8 &amp;&amp; hour &lt; 20) {
 <h1>Further Reading</h1>
 <ul>
   <li><a href="http://www.learningwebdesign.com">Learning Web Design by Jennifer Robbins</a></li>
-  <li><a href="http://docs.webplatform.org/wiki/Main_Page">Web Platform</a></li>
-  <li><a href="https://developer.mozilla.org/en-US/docs/Web" title="Web Documentation by Mozilla">MDN</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Documentation by Mozilla</a></li>
   <li><a href="https://pages.github.com">GitHub Pages</a></li>
 </ul>
 
