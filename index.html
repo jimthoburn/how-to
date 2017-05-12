@@ -3,49 +3,60 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>How to make a page for the Web</title>
+  <title>How to make and publish a page on the Web</title>
 
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700,700italic" rel="stylesheet" />
   <link href="shared.css" rel="stylesheet" />
 </head>
 <body>
 
-<h1>How to make a page for the Web</h1>
+<h1>How to make and publish a page on the Web</h1>
+
+<p><a href="https://github.com/jimthoburn/north">Here’s an example project</a> you can use as reference while you go through the steps.</p>
 
 <h2>Ingredients</h2>
 <ul>
+  <li>Text</li>
+  <li>Image</li>
+  <li>URL</li>
   <li><a href="#document">HTML document</a></li>
   <li><a href="#color">Colors</a></li>
   <li><a href="#typeface">Typeface</a></li>
   <li><a href="#layout">Layout</a></li>
+  <!--
   <li><a href="#animation">Animation</a></li>
+  -->
   <!--
   <li>Interaction</li>
   -->
 </ul>
 
 <h2>Instructions</h2>
-<h3>Add content</h3>
+<h3>Add your content</h3>
 <ol>
-  <li>Find or create some text and at least one image about a subject you’re interested in. Here’s <a href="https://jimthoburn.github.io/north/nuuk.html">an example</a>.</li>
-  <li>Create a new <a href="https://github.com/jimthoburn/how-to/blob/gh-pages/blank.html">HTML document.</a>.</li>
-  <li>Add your text, images and URLs as plain text.</li>
-  <li>Mark up your content to make it readable and interactive.</li>
-  <li>Open your document in a Web browser, to see how it’s looking.</li>
+  <li>Find or write some text about a subject you’re interested in. Here’s <a href="https://jimthoburn.github.io/north/nuuk.html">an example</a>. It will also be helpful to have at least one image and a URL to another website. <a href="https://en.wikipedia.org/wiki/Nuuk">Wikipedia</a> may be a good place to find these.</li>
+  <li>Download and open <a href="http://www.sublimetext.com">Sublime Text</a>. (Or use your favorite code editor.)</li>
+  <li>Create a new <a href="#document">HTML document.</a> and save it with the name “index.html”. That’s a special name that tells a web browser, “This is my home page”.</li>
+  <li>Add your text in the space between the opening <code>&lt;body&gt;</code> tag and the closing <code>&lt;/body&gt;</code> tag. You can also add the name of your image on a line by itself, and also the URL you found on a line by itself. This is your content.</li>
+  <li>Mark up your content by following <a href="#headline">these examples</a>. This will make the content understandable to software like search engines, screen readers, and web browsers.</li>
+  <li>Open your document in your favorite web browser, to see how it’s looking.</li>
 </ol>
-<h3>Style your content</h3>
+<p>Congrats! You just made a web page by hand.</p>
+<h3>Style your content (optional)</h3>
 <ol>
   <li>Create an empty file with a “.css” extension. This will be your style sheet.</li>
   <li>Add a <a href="#stylesheet">link</a> to the style sheet in your HTML document.</li>
   <li>Open the style sheet and change the <a href="#color">colors</a>, margins and typeface to your liking.</li>
-  <li>(Optional) Add <a href="#animation">animation</a> to make the page more lively.</li>
+  <!--
+  <li>(Optional) Add <a href="#animation">animation</a>.</li>
+  -->
 </ol>
 <h3>Publish your page for the world to see!</h3>
-<p><a href="https://pages.github.com">GitHub Pages</a> is a place where publish your web page for free.</p>
+<p><a href="https://pages.github.com">GitHub Pages</a> is a place where you publish your web page for free.</p>
 <ol>
   <li>Create a free account on <a href="https://github.com">GitHub</a>.</li>
   <li>
-    <a href="https://github.com/new">Create a new repository</a>.<br />
+    <a href="https://github.com/new">Create a new repository</a>. User lowercase letters for the name of your repository, and use dashes instead of spaces. For example: “nuuk-greenland”<br />
     <em>Be sure to check the “Initialize this repository with a README” checkbox.</em>
     <figure><img src="screenshots/initialize-repository.png" alt="Initialize this repository with a README" /></figure>
   </li>
@@ -75,6 +86,7 @@
   </li>
 </ol>
 <p>And you’re done!</p>
+<p>You can make further changes to your files by uploading them again, or by visiting your repository and selecting a file to edit.</p>
 
 <h1>Ingredients</h1>
 
@@ -89,9 +101,9 @@
 
 &lt;/body&gt;
 &lt;/html&gt;</code></pre>
-<p class="note">Copy and paste this into a new file. (Be sure to give it a “.html” extension.)</p>
+<p class="note">Copy and paste this into a new file named “index.html”</p>
 
-<h2>Headline</h2>
+<h2 id="headline">Headline</h2>
 <pre><code>&lt;h1&gt;The name of this page or section&lt;/h1&gt;</code></pre>
 
 <h2>Paragraph</h2>
@@ -108,19 +120,18 @@
 <p class="note">Place this in the <code>“head”</code> element of your HTML document.</p>
 
 <h2 id="color">Color</h2>
-<pre><code>element {
+<pre><code>body {
   background: black;
   color: white;
 }</code></pre>
-<p class="note">Replace the word <code>“element”</code> with the name of the HTML element you want to target (for example <code>“body”</code> or <code>“p”</code>).</p>
 
 <h2 id="typeface">Typeface</h2>
-<pre><code>element {
+<pre><code>body {
   font-family: Helvetica, sans-serif;
 }</code></pre>
 
 <h2 id="layout">Layout</h2>
-<pre><code>element {
+<pre><code>body {
   max-width: 40em;
   margin-left: auto;
   margin-right: auto;
@@ -138,6 +149,7 @@ background-position: top left;
 background-repeat: no-repeat;</code></pre>
 -->
 
+<!--
 <h2 id="animation">Animation</h2>
 <p>By <a href="http://www.justinaguilar.com/animations/">Justin Aguilar</a></p>
 <pre><code>@keyframes tossing {
@@ -156,6 +168,7 @@ background-repeat: no-repeat;</code></pre>
   animation-duration: 2.5s; 
   animation-iteration-count: infinite;
 }</code></pre>
+-->
 
 <!--
 <h2>Button Press</h2>
@@ -182,6 +195,7 @@ if (hour &gt; 8 &amp;&amp; hour &lt; 20) {
   <li><a href="http://www.learningwebdesign.com">Learning Web Design by Jennifer Robbins</a></li>
   <li><a href="https://developer.mozilla.org/en-US/docs/Web">Web Documentation by Mozilla</a></li>
   <li><a href="https://pages.github.com">GitHub Pages</a></li>
+  <li><a href="https://try.github.io">Try Git</a></li>
 </ul>
 
 </body>
